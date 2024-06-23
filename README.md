@@ -6,83 +6,83 @@
 
 ---
 
-## Descripción
+## Description
 
-**`suBruteforce`** es una herramienta de fuerza bruta diseñada para probar combinaciones de usuarios y contraseñas en sistemas Unix utilizando el comando `su`. Esta herramienta está escrita en Python y proporciona una interfaz amigable y personalizable para realizar ataques de fuerza bruta.
+**`suBruteforce`** is a brute force tool designed to test user and password combinations on Unix systems using the `su` command. This tool is written in Python and provides a friendly and customizable interface for performing brute force attacks.
 
-## Características
+## Characteristics
 
-- Fuerza bruta utilizando listas de usuarios y contraseñas.
-- Soporte para múltiples hilos para acelerar el proceso.
-- Exportación de resultados a un archivo.
-- Continuación de la fuerza bruta incluso después de encontrar una contraseña válida (opcional).
-- Verificación para asegurarse de que el script no se ejecute como root.
+- Brute force using lists of users and passwords.
+- Support for multiple threads to speed up the process.
+- Export results to a file.
+- Continuation of brute force even after finding a valid password (optional).
+- Check to make sure the script is not run as root.
 
-## Instalación
+## Install
 
-### Requisitos
+### Requirements
 
 - `Python 3`
-- `pip` (gestor de paquetes de Python)
+- `pip` (python package manager)
 
-### Pasos de Instalación
+### Installation Steps
 
-1. Clona el repositorio:
+1. Clone the repository:
 
     ```sh
     git clone https://github.com/D1se0/suBruteforce.git
     cd suBruteforce
     ```
 
-2. Ejecuta el script de instalación:
+2. Run the installation script:
 
     ```sh
     ./requeriments.sh
     ```
 
-    Este script instalará todas las dependencias necesarias y copiará el archivo `suBruteforce.py` a `/usr/bin/suBruteforce`.
+    This script will install all the necessary dependencies and copy the `suBruteforce.py` file to `/usr/bin/suBruteforce`.
 
-## Uso
+## Use
 
-### Comandos Básicos
+### Basic Commands
 
-- **Uso básico con un solo usuario y un diccionario de contraseñas:**
-
-    ```sh
-    suBruteforce -u <usuario> -w <archivo_de_contraseñas>
-    ```
-
-- **Uso con una lista de usuarios y un diccionario de contraseñas:**
+- **Basic use with a single user and a password dictionary:**
 
     ```sh
-    suBruteforce -U <archivo_de_usuarios> -w <archivo_de_contraseñas>
+    suBruteforce -u <user> -w <password_file>
     ```
 
-- **Especificar una única contraseña para un usuario:**
+- **Use with a user list and password dictionary:**
 
     ```sh
-    suBruteforce -u <usuario> -p <contraseña>
+    suBruteforce -U <user_file> -w <password_file>
     ```
 
-- **Usar múltiples hilos para acelerar el proceso:**
+- **Specify a single password for a user:**
 
     ```sh
-    suBruteforce -u <usuario> -w <archivo_de_contraseñas> -t <número_de_hilos>
+    suBruteforce -u <user> -p <password>
     ```
 
-- **Exportar los resultados a un archivo:**
+- **Use multiple threads to speed up the process:**
 
     ```sh
-    suBruteforce -u <usuario> -w <archivo_de_contraseñas> -f <archivo_de_resultados>
+    suBruteforce -u <user> -w <password_file> -t <number_of_threads>
     ```
 
-- **Continuar la fuerza bruta incluso después de encontrar una contraseña válida:**
+- **Export results to a file:**
 
     ```sh
-    suBruteforce -U <archivo_de_usuarios> -w <archivo_de_contraseñas> --success-continue
+    suBruteforce -u <user> -w <password_file> -f <results_file>
     ```
 
-## Ejemplo de Ejecución
+- **Continue brute force even after finding a valid password:**
+
+    ```sh
+    suBruteforce -U <user_file> -w <password_file> --success-continue
+    ```
+
+## Execution Example
 
 ```sh
 suBruteforce -u test -w passwords.txt -f credentials.txt
@@ -99,10 +99,10 @@ Bienvenido a suBruteforce - Herramienta de Fuerza Bruta para su
 [+] Resultados exportados correctamente a 'credentials.txt'.
 ```
 
-## Contribuciones
+## Contributions
 
-¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor abre un issue o envía un pull request.
+Contributions are welcome! If you would like to contribute, please open an issue or submit a pull request.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+This project is licensed under the MIT License. See the LICENSE file for more details.
