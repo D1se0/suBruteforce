@@ -2,7 +2,7 @@
 
 ## Descripción
 
-**suBruteforce** es una herramienta de fuerza bruta diseñada para probar combinaciones de usuarios y contraseñas en sistemas Unix utilizando el comando `su`. Esta herramienta está escrita en Python y proporciona una interfaz amigable y personalizable para realizar ataques de fuerza bruta.
+**`suBruteforce`** es una herramienta de fuerza bruta diseñada para probar combinaciones de usuarios y contraseñas en sistemas Unix utilizando el comando `su`. Esta herramienta está escrita en Python y proporciona una interfaz amigable y personalizable para realizar ataques de fuerza bruta.
 
 ## Características
 
@@ -16,15 +16,15 @@
 
 ### Requisitos
 
-- Python 3
-- pip (gestor de paquetes de Python)
+- `Python 3`
+- `pip` (gestor de paquetes de Python)
 
 ### Pasos de Instalación
 
 1. Clona el repositorio:
 
     ```sh
-    git clone https://github.com/tuusuario/suBruteforce.git
+    git clone https://github.com/D1se0/suBruteforce.git
     cd suBruteforce
     ```
 
