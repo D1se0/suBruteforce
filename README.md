@@ -49,43 +49,43 @@
 - **Basic use with a single user and a password dictionary:**
 
     ```sh
-    suBruteforce -u <user> -w <password_file>
+    python3 suBruteforce.py -u <user> -w <password_file>
     ```
 
 - **Use with a user list and password dictionary:**
 
     ```sh
-    suBruteforce -U <user_file> -w <password_file>
+    python3 suBruteforce.py -U <user_file> -w <password_file>
     ```
 
 - **Specify a single password for a user:**
 
     ```sh
-    suBruteforce -u <user> -p <password>
+    python3 suBruteforce.py -u <user> -p <password>
     ```
 
 - **Use multiple threads to speed up the process:**
 
     ```sh
-    suBruteforce -u <user> -w <password_file> -t <number_of_threads>
+    python3 suBruteforce.py -u <user> -w <password_file> -t <number_of_threads>
     ```
 
 - **Export results to a file:**
 
     ```sh
-    suBruteforce -u <user> -w <password_file> -f <results_file>
+    python3 suBruteforce.py -u <user> -w <password_file> -f <results_file>
     ```
 
 - **Continue brute force even after finding a valid password:**
 
     ```sh
-    suBruteforce -U <user_file> -w <password_file> --success-continue
+    python3 suBruteforce.py -U <user_file> -w <password_file> --success-continue
     ```
 
 ## Execution Example
 
 ```sh
-suBruteforce -u test -w passwords.txt -f credentials.txt
+python3 suBruteforce.py -u test -w passwords.txt -f credentials.txt
  ____       _             ____       _             
 / ___|  ___| |_ _   _ ___|  _ \ ___ (_)_ __   __ _ 
 \___ \ / _ \ __| | | / __| |_) / _ \| | '_ \ / _` |
