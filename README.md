@@ -31,7 +31,7 @@
 2. Ejecuta el script de instalación:
 
     ```sh
-    sudo ./install.sh
+    ./requeriments.sh
     ```
 
     Este script instalará todas las dependencias necesarias y copiará el archivo `suBruteforce.py` a `/usr/bin/suBruteforce`.
@@ -80,8 +80,6 @@
 
 ```sh
 suBruteforce -u test -w passwords.txt -f credentials.txt
-plaintext
-Copiar código
  ____       _             ____       _             
 / ___|  ___| |_ _   _ ___|  _ \ ___ (_)_ __   __ _ 
 \___ \ / _ \ __| | | / __| |_) / _ \| | '_ \ / _` |
