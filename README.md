@@ -1,5 +1,11 @@
 # suBruteforce
 
+<p align="center">
+  <img src="https://github.com/D1se0/cerbero/assets/164921056/064b49a7-e7f8-4548-9017-1a68390a032e" alt="Directorybrute" width="400">
+</p>
+
+---
+
 ## Descripción
 
 **`suBruteforce`** es una herramienta de fuerza bruta diseñada para probar combinaciones de usuarios y contraseñas en sistemas Unix utilizando el comando `su`. Esta herramienta está escrita en Python y proporciona una interfaz amigable y personalizable para realizar ataques de fuerza bruta.
