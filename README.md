@@ -1,7 +1,7 @@
 # suBruteforce
 
 <p align="center">
-  <img src="https://github.com/D1se0/cerbero/assets/164921056/064b49a7-e7f8-4548-9017-1a68390a032e" alt="Directorybrute" width="400">
+  <img src="https://github.com/D1se0/suBruteforce/assets/164921056/c1de1502-f825-472a-857e-4dca9e336377" alt="Directorybrute" width="400">
 </p>
 
 ---
